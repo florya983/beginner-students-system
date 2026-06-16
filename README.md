@@ -13,10 +13,4 @@ Aplicación en Java para gestionar alumnos de un curso.
 
 - Java(POO)
 
-## Cómo ejecutar
 
-Ejecutar la clase `Main` desde un IDE como VS Code.
-
-## Autor 
-
-Florencia Yañez
