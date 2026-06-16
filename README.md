@@ -1,5 +1,5 @@
 
-BEGINNNER STUDENTS SYSYTEM JAVA 
+BEGINNER STUDENTS SYSTEM 
 
 Java application for managing students in a course.
 
