@@ -1,16 +1,16 @@
-Aplicación en Java para gestionar alumnos de un curso.
 
-## Funcionalidades
+Java application for managing students in a course.
 
-- Carga de alumnos (nombre, nota, trabajo práctico)
-- Modificacion nota
-- Cálculo de promedio
-- Búsqueda de nota máxima y mínima
-- Identificación de alumnos aprobados
-- Lista de todos los alumnnos
+##Features
 
-## Tecnologías
+Add students (name, grade, practical assignment)
+Update student grades
+Calculate the average grade
+Find the highest and lowest grades
+Identify passing students
+Display a list of all students
 
-- Java(POO)
+##Technologies
 
+Java(OOP)
 
