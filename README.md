@@ -1,7 +1,11 @@
 
+BEGINNNER STUDENTS SYSYTEM JAVA 
+
 Java application for managing students in a course.
 
+
 ##Features
+
 
 Add students (name, grade, practical assignment)
 
@@ -15,7 +19,9 @@ Identify passing students
 
 Display a list of all students
 
+
 ##Technologies
+
 
 Java(OOP)
 
