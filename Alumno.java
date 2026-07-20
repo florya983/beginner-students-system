@@ -1,5 +1,5 @@
 
- package StudentManagementSystem;
+ package studentmanagementsystem;
 
 
     public class  Student {
