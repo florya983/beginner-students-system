@@ -1,23 +1,23 @@
-package GestionAlumnos;
+package StudentsManagementSystem;
 
 import java.util.*;
 
 public class Main {
      public static void main(String[] args) {
-          int opcion = -1;
-          Curso c = new Curso();
+          int option = -1;
+          Course c = new Course();
           Scanner consola = new Scanner(System.in);
-          System.out.println("Sistema alumnos");
-          System.out.println("Ingrese cantidad de alumnos del curso");
-          int cantidadAlumnos = consola.nextInt();
+          System.out.println("Students Management System");
+          System.out.println("Enter the number of students in the course");
+          int NumberOfStudents = consola.nextInt();
           consola.nextLine();
-          List<Alumno> CursoAlumnos = new ArrayList<>();
-          for (int i = 0; i < cantidadAlumnos; i++) {
-               Alumno s = new Alumno();
-               System.out.println("Ingrese apellido y nombre del alumno");
-               String nombre = consola.nextLine();
-               if (s.VerificarNombre(nombre)) {
-                    s.AlmacenarNombre(nombre);
+          List<Student> StudentCourse= new ArrayList<>();
+          for (int i = 0; i < NumberOfStudents; i++) {
+               Student s = new Student();
+               System.out.println("Enter student's first and last name");
+               String name = consola.nextLine();
+               if (s.validateName(name)) {
+                    s.saveName(name);
                }
                System.out.println("Ingrese nota de su examen");
                int nota = consola.nextInt();
