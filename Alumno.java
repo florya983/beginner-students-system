@@ -7,19 +7,19 @@
              int grade;
              boolean project;
 
-            public  boolean ValidateName(String name){
+            public  boolean validateName(String name){
                return name!=null && !name.equals("");
              }   
-             public  void SaveName(String name){
+             public  void saveName(String name){
                 this.name=name;
              }
-             public boolean ValidateGrade(int grade){
+             public boolean validateGrade(int grade){
                 return grade<=10 && grade>0;
              }
-            public  void SaveGrade(int grade){
+            public  void saveGrade(int grade){
                 this.grade=grade;
             }
-            public void SaveProjectApproval(boolean project){
+            public void saveProjectApproval(boolean project){
                 this.project=project;
               
             }
