@@ -1,4 +1,4 @@
-package StudentsManagementSystem;
+package studentsmanagementsystem;
 
 import java.util.*;
 
