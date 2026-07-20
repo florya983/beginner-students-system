@@ -1,26 +1,26 @@
 
- package GestionAlumnos;
+ package StudentManagementSystem;
 
 
-    public class  Alumno {
-            String nombre; 
-             int nota;
-             boolean tp;
+    public class  Student {
+            String name; 
+             int grade;
+             boolean project;
 
-            public  boolean VerificarNombre(String nombre){
-               return nombre!=null && !nombre.equals("");
+            public  boolean ValidateName(String name){
+               return name!=null && !name.equals("");
              }   
-             public  void AlmacenarNombre(String nombre){
-                this.nombre=nombre;
+             public  void SaveName(String name){
+                this.name=name;
              }
-             public boolean VerificarNota(int nota){
-                return nota<=10 && nota>0;
+             public boolean ValidateGrade(int grade){
+                return grade<=10 && grade>0;
              }
-            public  void AlmacenarNota(int nota){
-                this.nota=nota;
+            public  void SaveGrade(int grade){
+                this.grade=grade;
             }
-            public void AlmacenarAprobacionTp(boolean tp){
-                this.tp=tp;
+            public void SaveProjectApproval(boolean project){
+                this.project=project;
               
             }
            
