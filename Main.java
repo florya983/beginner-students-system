@@ -11,7 +11,7 @@ public class Main {
           System.out.println("Enter the number of students in the course");
           int NumberOfStudents = consola.nextInt();
           consola.nextLine();
-          List<Student> StudentCourse= new ArrayList<>();
+          List<Student> StudentsCourse= new ArrayList<>();
           for (int i = 0; i < NumberOfStudents; i++) {
                Student s = new Student();
                System.out.println("Enter student's first and last name");
@@ -19,22 +19,22 @@ public class Main {
                if (s.validateName(name)) {
                     s.saveName(name);
                }
-               System.out.println("Ingrese nota de su examen");
-               int nota = consola.nextInt();
-               while (!s.VerificarNota(nota)) {
-                    System.out.println("Nota invalida,ingrese nota");
-                    nota = consola.nextInt();
+               System.out.println("Enter student grade");
+               int grade = consola.nextInt();
+               while (!s.validateGrade(grade)) {
+                    System.out.println("Invalid grade.Enter a grade" );
+                    grade= consola.nextInt();
                }
-               s.AlmacenarNota(nota);
-               System.out.println("El alumno aprobo el Trabajo Practico?Responder true/false");
-               boolean tp = consola.nextBoolean();
+               s.saveGrade(nota);
+               System.out.println("Did the student pass the project?Answer true/false");
+               boolean project= consola.nextBoolean();
                consola.nextLine();
-               s.AlmacenarAprobacionTp(tp);
-               CursoAlumnos.add(s);
+               s.saveProjectApproval(project);
+               StudentsCourse.add(s);
 
           }
 
-          while (opcion != 0) {
+          while (option != 0) {
                System.out.println("""
                          Escriba opcion deseada:
                          1: Lista de todos los alumnos del curso
