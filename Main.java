@@ -36,24 +36,24 @@ public class Main {
 
           while (option != 0) {
                System.out.println("""
-                         Escriba opcion deseada:
-                         1: Lista de todos los alumnos del curso
-                         2: Promedio nota total de la comision
-                         3: Alumno con nota mas alta
-                         4: Alumno con nota mas baja
-                         5:Mostrar alumnos aprobados
-                         6: Modificar nota de alumno
-                         0: Salir
-                         """);
-               opcion = consola.nextInt();
+                         Enter the desired option:
+                         1: List all students in the course 
+                         2: Show the course average grade 
+                         3: Show the student with the highest grade 
+                         4: Show the student with the lowest grade 
+                         5:Show students who passed 
+                         6: Change a student's grade 
+                         0: Exit
+                         """)
+               int option = consola.nextInt();
                consola.nextLine();
-               switch (opcion) {
+               switch (option) {
                     case 1:
-                         c.MostrarAlumnos(CursoAlumnos);
+                         c.showStudents(StudentsCourse);
                          break;
                     case 2:
-                         float promedioNota = c.PromedioNotas(CursoAlumnos);
-                         System.out.println("El promedio de notas del curso es: " + promedioNota);
+                         float averageGrade = c.calculateCourseAverage(StudentsCourse);
+                         System.out.println("The course average grade is: " + averageGrade);
                          break;
                     case 3:
                          int notaMasAlta = c.CalculoNotaMasAlta(CursoAlumnos);
